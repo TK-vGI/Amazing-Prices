@@ -257,6 +257,55 @@ footer a {
 
 footer a:first-child {
     margin-left: 22px;
-    text-decoration: none;
 }
 
+/* Adjusting to mobile phone screen*/
+
+@media screen and (max-width: 425px) {
+    /* Header */
+
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: max-content;
+        justify-content: space-evenly;
+    }
+    nav {
+        justify-content: space-evenly;
+    }
+
+    /* Main */
+
+    #first {
+        width: 95%;
+    }
+
+    #second {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    table {
+        width: 95%;
+        height: 200px;
+        align-self: center;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: max-content;
+    }
+
+    footer a {
+        margin: 15px 0;
+    }
+}
